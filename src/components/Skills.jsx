@@ -129,7 +129,7 @@ export default function Skills() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.7 }}
           className="text-center mb-6"
         >
           <h3 className="text-2xl font-semibold mb-1 text-purple-300">Tools & Platforms</h3>
