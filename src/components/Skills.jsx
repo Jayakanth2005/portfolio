@@ -71,7 +71,7 @@ export default function Skills() {
         whileHover={{ scale: 1.05 }}
         onClick={showLevel ? () => handleClick(item.name) : null}
         onMouseLeave={showLevel ? handleMouseLeave : null}
-        className="group flex flex-col items-center bg-white/5 border border-white/10 hover:border-blue-500/40 text-white rounded-xl p-4 shadow-md hover:shadow-blue-500/10 transition-all duration-300 cursor-pointer"
+        className="group flex flex-col items-center bg-gray-800 border border-gray-700 hover:border-blue-500/40 text-white rounded-xl p-4 shadow-md hover:shadow-blue-500/10 transition-all duration-300 cursor-pointer"
       >
         <div className="flex items-center space-x-2">
           <Icon className="w-6 h-6" style={{ color: item.color }} />
@@ -101,7 +101,7 @@ export default function Skills() {
   return (
     <section
       id="skills"
-      className="bg-gradient-to-br from-gray-900 via-gray-950 to-black text-white py-16"
+      className="bg-gray-900 text-white py-16"
     >
       <div className="max-w-7xl mx-auto px-4">
         <motion.div
@@ -111,7 +111,7 @@ export default function Skills() {
           transition={{ duration: 0.5 }}
           className="text-center mb-12"
         >
-          <h2 className="text-4xl font-bold mb-3 bg-gradient-to-r from-purple-400 to-blue-500 text-transparent bg-clip-text">
+          <h2 className="text-4xl font-bold mb-3 text-blue-500">
             Skills & Technologies
           </h2>
           <p className="text-gray-400">Click a skill to see your proficiency</p>

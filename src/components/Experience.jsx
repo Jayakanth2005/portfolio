@@ -44,7 +44,7 @@ export default function Experience() {
   return (
     <section
       id="experience"
-      className="bg-gradient-to-br from-gray-800 via-gray-900 to-gray-950 text-white py-20"
+      className="bg-gray-900 text-white py-20"
     >
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
@@ -66,8 +66,7 @@ export default function Experience() {
                   <div
                     className={`absolute ${
                       isAbove ? 'bottom-full mb-2' : 'top-full mt-2'
-                    } h-10 w-0.5 bg-gray-500`}
-                  ></div>
+                    } h-10 w-0.5 bg-gray-500`}></div>
 
                   {/* Icon */}
                   <div className="w-7 h-7 bg-white text-black rounded-full flex items-center justify-center z-10 shadow-md">

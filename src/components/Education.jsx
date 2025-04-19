@@ -21,10 +21,9 @@ const education = [
   }
 ];
 
-
 function Education() {
   return (
-    <section id="education" className="section-padding bg-gray-50 py-16">
+    <section id="education" className="bg-gray-900 text-white py-20">
       <div className="max-w-7xl mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -33,8 +32,10 @@ function Education() {
           transition={{ duration: 0.5 }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Education</h2>
-          <p className="text-gray-600">My academic journey and achievements</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400 mb-4">
+            Education
+          </h2>
+          <p className="text-gray-400">My academic journey and achievements</p>
         </motion.div>
 
         <div className="grid md:grid-cols-3 gap-6">
@@ -45,12 +46,12 @@ function Education() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
-              className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all cursor-pointer"
+              className="bg-gray-800 rounded-xl p-6 shadow-md hover:shadow-xl transition-all cursor-pointer"
             >
-              <h3 className="text-xl font-semibold mb-2 text-blue-600">{edu.institution}</h3>
-              <p className="text-gray-600 mb-2">{edu.degree}</p>
-              <p className="text-gray-500 text-sm mb-2">{edu.year}</p>
-              <p className="text-primary font-medium">
+              <h3 className="text-xl font-semibold mb-2 text-blue-400">{edu.institution}</h3>
+              <p className="text-gray-300 mb-2">{edu.degree}</p>
+              <p className="text-gray-400 text-sm mb-2">{edu.year}</p>
+              <p className="text-white font-medium">
                 {edu.cgpa || edu.percentage}
               </p>
             </motion.div>

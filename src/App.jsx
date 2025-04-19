@@ -36,7 +36,9 @@ function App() {
         <Accomplishments />
         <Papers />
         <Volunteering />
-        <Contact />
+        <div className="bg-gray-900 text-white">
+          <Contact />
+        </div>
       </main>
     </div>
   );

@@ -1,18 +1,19 @@
 import { motion } from 'framer-motion';
+import intelImg from '../assets/intel.png';
 
 function Volunteering() {
   return (
-    <section id="volunteering" className="section-padding">
-      <div className="max-w-7xl mx-auto">
+    <section id="volunteering" className="section-padding bg-gray-900 text-white">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="text-center mb-12"
+          className="text-center mb-10"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Volunteering</h2>
-          <p className="text-gray-600">Contributing to the community</p>
+          <h2 className="text-3xl md:text-4xl font-bold mb-3">Volunteering</h2>
+          <p className="text-gray-400 text-base md:text-lg">Contributing to the community</p>
         </motion.div>
 
         <motion.div
@@ -20,27 +21,37 @@ function Volunteering() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="bg-white rounded-xl p-8 shadow-md"
+          className="flex flex-col md:flex-row items-center bg-gray-800 rounded-xl shadow-lg overflow-hidden"
         >
-          <h3 className="text-2xl font-semibold mb-4 gradient-text">
-            Creative Lead – INTELLEXA REC
-          </h3>
-          <p className="text-lg text-primary mb-4">Technical Club</p>
-          <p className="text-gray-600 mb-6">
-            Led creative initiatives and organized technical events as the Creative Lead of INTELLEXA,
-            the technical club at Rajalakshmi Engineering College. Responsible for designing promotional
-            materials, managing social media presence, and coordinating technical workshops.
-          </p>
-          <div className="flex flex-wrap gap-3">
-            <span className="px-4 py-2 bg-primary/10 text-primary rounded-full text-sm">
-              Leadership
-            </span>
-            <span className="px-4 py-2 bg-primary/10 text-primary rounded-full text-sm">
-              Event Management
-            </span>
-            <span className="px-4 py-2 bg-primary/10 text-primary rounded-full text-sm">
-              Creative Design
-            </span>
+          {/* Left Content */}
+          <div className="w-full md:w-1/2 p-6 md:p-8 max-w-xl">
+            <h3 className="text-xl md:text-2xl font-semibold mb-2">Creative Lead – INTELLEXA REC</h3>
+            <p className="text-base text-primary mb-3">Technical Club</p>
+            <p className="text-sm md:text-base text-gray-300 mb-5 leading-relaxed">
+              Led creative initiatives and organized technical events as the Creative Lead of INTELLEXA,
+              the technical club at Rajalakshmi Engineering College. Responsible for designing promotional
+              materials, managing social media presence, and coordinating technical workshops.
+            </p>
+            <div className="flex flex-wrap gap-2">
+              <span className="px-3 py-1 bg-primary/20 text-primary rounded-full text-xs md:text-sm">
+                Leadership
+              </span>
+              <span className="px-3 py-1 bg-primary/20 text-primary rounded-full text-xs md:text-sm">
+                Event Management
+              </span>
+              <span className="px-3 py-1 bg-primary/20 text-primary rounded-full text-xs md:text-sm">
+                Creative Design
+              </span>
+            </div>
+          </div>
+
+          {/* Right Image */}
+          <div className="w-full md:w-1/2 p-4">
+            <img
+              src={intelImg}
+              alt="INTELLEXA Volunteering"
+              className="w-full max-h-[320px] rounded-lg object-cover mx-auto"
+            />
           </div>
         </motion.div>
       </div>
